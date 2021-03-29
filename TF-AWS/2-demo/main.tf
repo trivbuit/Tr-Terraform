@@ -5,7 +5,7 @@ terraform {
     organization = "env-tct37d1oddo7u4g"
 
     workspaces {
-      name = "Local2Scalr"
+      name = "Local2ScalrPro"
     }
   }
 }
