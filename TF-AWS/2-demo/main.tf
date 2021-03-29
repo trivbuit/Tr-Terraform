@@ -10,9 +10,8 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
-provider "aws" {
-  region     = "ap-southeast-1"
+variable "region" {
+  default = "ap-southeast-1"
 }
 
 module "ec2_cluster" {
