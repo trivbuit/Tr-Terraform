@@ -4,7 +4,8 @@ provider "aws" {
 }
 
 module "ec2_cluster" {
-  source = "github.com/trivbuit/trModule-Terraform-AWS-EC2-Instance?ref=v1.0.4"
+  source  = "trivbuit.scalr.io/env-tct37d1oddo7u4g/ec2-instance-trmodule/aws"
+	version = "1.0.4"
 
   count = var.instance_count
 
