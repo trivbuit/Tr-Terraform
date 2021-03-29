@@ -15,7 +15,7 @@ terraform {
     organization = "env-tct37d1oddo7u4g"
 
     workspaces {
-      name = "S3toScalr"
+      name = "Local_2_Scalr"
     }
   }
 }
@@ -23,7 +23,7 @@ terraform {
 module "ec2_cluster" {
   source = "github.com/trivbuit/trModule-Terraform-AWS-EC2-Instance?ref=v1.0.4"
 
-  count = 3
+  count = 2
 
   ami           = "ami-0f86a70488991335e"
   instance_type = "t2.micro"
